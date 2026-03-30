@@ -1,0 +1,177 @@
+{
+  "eras": [
+
+    {
+      "era": "1965–1969 Acid / Primal Dead",
+      "rig": "Gibson SG → Fender amps → Fuzz",
+      "tone": "Fuzz / Raw / Psychedelic",
+      "presets": [
+        {
+          "preset": "FUZZ LEAD",
+          "gt1_match": "P30 OCTAFUZZ / P31 FUZZ",
+          "songs": [
+            "Viola Lee Blues",
+            "The Other One",
+            "Caution (Do Not Stop on Tracks)"
+          ]
+        },
+        {
+          "preset": "GARAGE BLUES",
+          "gt1_match": "P07 BLUES CRUNCH",
+          "songs": [
+            "Good Morning Little Schoolgirl",
+            "Big Boss Man"
+          ]
+        }
+      ]
+    },
+
+    {
+      "era": "1970–1972 Americana / Workingman Era",
+      "rig": "Strat → Fender Twin",
+      "tone": "Clean / Country / Folk",
+      "presets": [
+        {
+          "preset": "CLEAN TWIN",
+          "gt1_match": "P03 NATURAL CLEAN / P95 TWEED CLEAN",
+          "songs": [
+            "Ripple",
+            "Friend of the Devil",
+            "Dire Wolf"
+          ]
+        },
+        {
+          "preset": "COUNTRY PICK",
+          "gt1_match": "P94 COUNTRY PICKIN'",
+          "songs": [
+            "Cumberland Blues",
+            "Me and My Uncle"
+          ]
+        }
+      ]
+    },
+
+    {
+      "era": "1972–1974 Europe / Jazz Dead",
+      "rig": "Strat → Twin → McIntosh (proto)",
+      "tone": "Clean Lead / Early Jam Tone",
+      "presets": [
+        {
+          "preset": "JAZZ CLEAN LEAD",
+          "gt1_match": "P89 JAZZ SIM / P90 CLEAN SUSTAIN",
+          "songs": [
+            "Eyes of the World",
+            "China Cat Sunflower",
+            "Playing in the Band"
+          ]
+        },
+        {
+          "preset": "WARM LEAD",
+          "gt1_match": "P16 FAT BLUES LEAD",
+          "songs": [
+            "Stella Blue",
+            "Mississippi Half-Step"
+          ]
+        }
+      ]
+    },
+
+    {
+      "era": "1975–1978 Golden Era",
+      "rig": "Travis Bean → McIntosh → JBL",
+      "tone": "Crystal Clean / Singing Lead",
+      "presets": [
+        {
+          "preset": "JERRY LEAD",
+          "gt1_match": "P20 SPACY LEAD / P46 CLASSIC LEAD",
+          "songs": [
+            "Scarlet Begonias",
+            "Fire on the Mountain",
+            "Deal"
+          ]
+        },
+        {
+          "preset": "FUNK FILTER",
+          "gt1_match": "P83 FUNKY GROOVE / envelope filter sim",
+          "songs": [
+            "Shakedown Street",
+            "Estimated Prophet"
+          ]
+        }
+      ]
+    },
+
+    {
+      "era": "1979–1985 Early MIDI / Effects Era",
+      "rig": "Tiger guitar → effects → McIntosh",
+      "tone": "Envelope / Phaser / Chorus",
+      "presets": [
+        {
+          "preset": "ENVELOPE FILTER",
+          "gt1_match": "auto-wah / filter",
+          "songs": [
+            "Shakedown Street",
+            "Feel Like a Stranger"
+          ]
+        },
+        {
+          "preset": "PHASER CLEAN",
+          "gt1_match": "P72 MODULATE / P66 TREMOLO MOD",
+          "songs": [
+            "Estimated Prophet",
+            "Bird Song"
+          ]
+        }
+      ]
+    },
+
+    {
+      "era": "1986–1990 Brent Era",
+      "rig": "Tiger → MIDI → stereo rigs",
+      "tone": "Chorus / Digital Clean",
+      "presets": [
+        {
+          "preset": "CHORUS CLEAN",
+          "gt1_match": "P71 SUPER CLEAN / P72 MOD",
+          "songs": [
+            "Touch of Grey",
+            "Hell in a Bucket"
+          ]
+        },
+        {
+          "preset": "DIGITAL LEAD",
+          "gt1_match": "P70 80s LEAD",
+          "songs": [
+            "Throwing Stones",
+            "Althea"
+          ]
+        }
+      ]
+    },
+
+    {
+      "era": "1991–1995 Late MIDI / Space Era",
+      "rig": "Rosebud → full MIDI synth rig",
+      "tone": "Synth / Ambient / Experimental",
+      "presets": [
+        {
+          "preset": "SYNTH LEAD",
+          "gt1_match": "P17 ORGAN / synth sim",
+          "songs": [
+            "Space",
+            "Drums > Space"
+          ]
+        },
+        {
+          "preset": "AMBIENT PAD",
+          "gt1_match": "P63 TRIPLE DELAY",
+          "songs": [
+            "Dark Star (late versions)",
+            "The Other One (late)"
+          ]
+        }
+      ]
+    }
+
+  ]
+}

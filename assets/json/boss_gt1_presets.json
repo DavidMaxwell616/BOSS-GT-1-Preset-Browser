@@ -1,0 +1,1784 @@
+{
+  "P01": {
+    "name": "HI GAIN STACK",
+    "tone": "Metal Rhythm",
+    "songs": [
+      {
+        "artist": "Metallica",
+        "song": "Enter Sandman"
+      },
+      {
+        "artist": "Pantera",
+        "song": "Walk"
+      },
+      {
+        "artist": "Ozzy Osbourne",
+        "song": "Crazy Train"
+      }
+    ]
+  },
+  "P02": {
+    "name": "TERA ECHO LEAD",
+    "tone": "Ambient Delay",
+    "songs": [
+      {
+        "artist": "U2",
+        "song": "Where the Streets Have No Name"
+      },
+      {
+        "artist": "David Gilmour",
+        "song": "Comfortably Numb"
+      },
+      {
+        "artist": "The Edge",
+        "song": "With or Without You"
+      }
+    ]
+  },
+  "P03": {
+    "name": "NATURAL CLEAN",
+    "tone": "Clean",
+    "songs": [
+      {
+        "artist": "John Mayer",
+        "song": "Slow Dancing in a Burning Room"
+      },
+      {
+        "artist": "Eric Clapton",
+        "song": "Wonderful Tonight"
+      },
+      {
+        "artist": "The Police",
+        "song": "Every Breath You Take"
+      }
+    ]
+  },
+  "P04": {
+    "name": "POWER METAL RIFF",
+    "tone": "Metal",
+    "songs": [
+      {
+        "artist": "Megadeth",
+        "song": "Symphony of Destruction"
+      },
+      {
+        "artist": "Slayer",
+        "song": "Raining Blood"
+      },
+      {
+        "artist": "Anthrax",
+        "song": "Madhouse"
+      }
+    ]
+  },
+  "P05": {
+    "name": "HARMONY LD in Am",
+    "tone": "Harmony Lead",
+    "songs": [
+      {
+        "artist": "Iron Maiden",
+        "song": "The Trooper"
+      },
+      {
+        "artist": "Thin Lizzy",
+        "song": "The Boys Are Back in Town"
+      },
+      {
+        "artist": "Avenged Sevenfold",
+        "song": "Bat Country"
+      }
+    ]
+  },
+  "P06": {
+    "name": "ROUND & ROUND",
+    "tone": "Rotary",
+    "songs": [
+      {
+        "artist": "Van Halen",
+        "song": "And the Cradle Will Rock..."
+      },
+      {
+        "artist": "Deep Purple",
+        "song": "Lazy"
+      },
+      {
+        "artist": "Steve Winwood",
+        "song": "While You See a Chance"
+      }
+    ]
+  },
+  "P07": {
+    "name": "FDR BLUES CRUNCH",
+    "tone": "Blues",
+    "songs": [
+      {
+        "artist": "Stevie Ray Vaughan",
+        "song": "Pride and Joy"
+      },
+      {
+        "artist": "The Black Keys",
+        "song": "Lonely Boy"
+      },
+      {
+        "artist": "Gary Clark Jr.",
+        "song": "Bright Lights"
+      }
+    ]
+  },
+  "P08": {
+    "name": "SYNC TREMOLO",
+    "tone": "Tremolo",
+    "songs": [
+      {
+        "artist": "Radiohead",
+        "song": "Bones"
+      },
+      {
+        "artist": "The Smiths",
+        "song": "How Soon Is Now?"
+      },
+      {
+        "artist": "Creedence Clearwater Revival",
+        "song": "Born on the Bayou"
+      }
+    ]
+  },
+  "P09": {
+    "name": "ADD TRANSPARENCY",
+    "tone": "Boosted Clean",
+    "songs": [
+      {
+        "artist": "The Rolling Stones",
+        "song": "Start Me Up"
+      },
+      {
+        "artist": "Tom Petty",
+        "song": "Mary Jane's Last Dance"
+      },
+      {
+        "artist": "Bruce Springsteen",
+        "song": "Dancing in the Dark"
+      }
+    ]
+  },
+  "P10": {
+    "name": "ORNG ROOMY LEAD",
+    "tone": "Alt Rock",
+    "songs": [
+      {
+        "artist": "Led Zeppelin",
+        "song": "Whole Lotta Love"
+      },
+      {
+        "artist": "Free",
+        "song": "All Right Now"
+      },
+      {
+        "artist": "Wolfmother",
+        "song": "Joker and the Thief"
+      }
+    ]
+  },
+  "P11": {
+    "name": "AC SIM STRAIGHT",
+    "tone": "Metal Rhythm",
+    "songs": [
+      {
+        "artist": "Eagles",
+        "song": "Hotel California (Acoustic)"
+      },
+      {
+        "artist": "America",
+        "song": "A Horse with No Name"
+      },
+      {
+        "artist": "Pearl Jam",
+        "song": "Elderly Woman Behind the Counter in a Small Town"
+      }
+    ]
+  },
+  "P12": {
+    "name": "ROYAL LEAD",
+    "tone": "Ambient Delay",
+    "songs": [
+      {
+        "artist": "Queen",
+        "song": "Bohemian Rhapsody"
+      },
+      {
+        "artist": "Boston",
+        "song": "More Than a Feeling"
+      },
+      {
+        "artist": "Journey",
+        "song": "Separate Ways"
+      }
+    ]
+  },
+  "P13": {
+    "name": "SUPER SLOW GEAR",
+    "tone": "Clean",
+    "songs": [
+      {
+        "artist": "Pink Floyd",
+        "song": "Shine On You Crazy Diamond"
+      },
+      {
+        "artist": "Sigur Rós",
+        "song": "Svefn-g-englar"
+      },
+      {
+        "artist": "Daniel Lanois",
+        "song": "The Messenger"
+      }
+    ]
+  },
+  "P14": {
+    "name": "SLAPBACK ECHO",
+    "tone": "Metal",
+    "songs": [
+      {
+        "artist": "Elvis Presley",
+        "song": "That's All Right"
+      },
+      {
+        "artist": "Carl Perkins",
+        "song": "Blue Suede Shoes"
+      },
+      {
+        "artist": "Scotty Moore",
+        "song": "Mystery Train"
+      }
+    ]
+  },
+  "P15": {
+    "name": "A-DIST &OVERTONE",
+    "tone": "Harmony Lead",
+    "songs": [
+      {
+        "artist": "Tool",
+        "song": "Schism"
+      },
+      {
+        "artist": "King's X",
+        "song": "Black Flag"
+      },
+      {
+        "artist": "Porcupine Tree",
+        "song": "Blackest Eyes"
+      }
+    ]
+  },
+  "P16": {
+    "name": "FAT BLUESY LEAD",
+    "tone": "Rotary",
+    "songs": [
+      {
+        "artist": "Gary Moore",
+        "song": "Still Got the Blues"
+      },
+      {
+        "artist": "Joe Bonamassa",
+        "song": "Sloe Gin"
+      },
+      {
+        "artist": "Robben Ford",
+        "song": "Talk to Your Daughter"
+      }
+    ]
+  },
+  "P17": {
+    "name": "DIVID ORGAN TONE",
+    "tone": "Blues",
+    "songs": [
+      {
+        "artist": "Deep Purple",
+        "song": "Highway Star"
+      },
+      {
+        "artist": "Yes",
+        "song": "Roundabout"
+      },
+      {
+        "artist": "Jon Lord",
+        "song": "Burn"
+      }
+    ]
+  },
+  "P18": {
+    "name": "STACK CRUNCH",
+    "tone": "Tremolo",
+    "songs": [
+      {
+        "artist": "AC/DC",
+        "song": "Back in Black"
+      },
+      {
+        "artist": "Aerosmith",
+        "song": "Walk This Way"
+      },
+      {
+        "artist": "The Cult",
+        "song": "Love Removal Machine"
+      }
+    ]
+  },
+  "P19": {
+    "name": "VAN FLANGE",
+    "tone": "Boosted Clean",
+    "songs": [
+      {
+        "artist": "Van Halen",
+        "song": "Unchained"
+      },
+      {
+        "artist": "Dokken",
+        "song": "Into the Fire"
+      },
+      {
+        "artist": "Ratt",
+        "song": "Lay It Down"
+      }
+    ]
+  },
+  "P20": {
+    "name": "SPACY LEAD",
+    "tone": "Alt Rock",
+    "songs": [
+      {
+        "artist": "Joe Satriani",
+        "song": "Surfing with the Alien"
+      },
+      {
+        "artist": "Steve Vai",
+        "song": "For the Love of God"
+      },
+      {
+        "artist": "Andy Timmons",
+        "song": "Cry for You"
+      }
+    ]
+  },
+  "P21": {
+    "name": "1959 CRUNCH",
+    "tone": "Metal Rhythm",
+    "songs": [
+      {
+        "artist": "Eric Clapton",
+        "song": "Crossroads"
+      },
+      {
+        "artist": "Cream",
+        "song": "Sunshine of Your Love"
+      },
+      {
+        "artist": "Free",
+        "song": "All Right Now"
+      }
+    ]
+  },
+  "P22": {
+    "name": "MID BOOST COMBO",
+    "tone": "Ambient Delay",
+    "songs": [
+      {
+        "artist": "John Frusciante",
+        "song": "Californication"
+      },
+      {
+        "artist": "The Beatles",
+        "song": "Revolution"
+      },
+      {
+        "artist": "The Who",
+        "song": "Baba O'Riley"
+      }
+    ]
+  },
+  "P23": {
+    "name": "CRUNCH 4 RHYTHM",
+    "tone": "Clean",
+    "songs": [
+      {
+        "artist": "Green Day",
+        "song": "Basket Case"
+      },
+      {
+        "artist": "Foo Fighters",
+        "song": "Monkey Wrench"
+      },
+      {
+        "artist": "The Strokes",
+        "song": "Last Nite"
+      }
+    ]
+  },
+  "P24": {
+    "name": "ROTARY",
+    "tone": "Metal",
+    "songs": [
+      {
+        "artist": "The Beatles",
+        "song": "Lucy in the Sky with Diamonds"
+      },
+      {
+        "artist": "Stevie Ray Vaughan",
+        "song": "Cold Shot"
+      },
+      {
+        "artist": "Soundgarden",
+        "song": "Black Hole Sun"
+      }
+    ]
+  },
+  "P25": {
+    "name": "1969 XPERIENCE",
+    "tone": "Harmony Lead",
+    "songs": [
+      {
+        "artist": "Jimi Hendrix",
+        "song": "Purple Haze"
+      },
+      {
+        "artist": "Santana",
+        "song": "Soul Sacrifice"
+      },
+      {
+        "artist": "Blue Cheer",
+        "song": "Summertime Blues"
+      }
+    ]
+  },
+  "P26": {
+    "name": "CREAMY SET",
+    "tone": "Rotary",
+    "songs": [
+      {
+        "artist": "Cream",
+        "song": "Sunshine of Your Love"
+      },
+      {
+        "artist": "Robin Trower",
+        "song": "Bridge of Sighs"
+      },
+      {
+        "artist": "Mountain",
+        "song": "Mississippi Queen"
+      }
+    ]
+  },
+  "P27": {
+    "name": "DEEP DELAY & VIB",
+    "tone": "Blues",
+    "songs": [
+      {
+        "artist": "David Gilmour",
+        "song": "Comfortably Numb"
+      },
+      {
+        "artist": "Robin Trower",
+        "song": "Bridge of Sighs"
+      },
+      {
+        "artist": "U2",
+        "song": "Bad"
+      }
+    ]
+  },
+  "P28": {
+    "name": "ROBINS BRIDGE",
+    "tone": "Tremolo",
+    "songs": [
+      {
+        "artist": "Robin Trower",
+        "song": "Bridge of Sighs"
+      },
+      {
+        "artist": "Jimi Hendrix",
+        "song": "Machine Gun"
+      },
+      {
+        "artist": "Philip Sayce",
+        "song": "Out of My Mind"
+      }
+    ]
+  },
+  "P29": {
+    "name": "RIPPIN’",
+    "tone": "Boosted Clean",
+    "songs": [
+      {
+        "artist": "Steve Vai",
+        "song": "For the Love of God"
+      },
+      {
+        "artist": "Joe Satriani",
+        "song": "Always with Me, Always with You"
+      },
+      {
+        "artist": "Paul Gilbert",
+        "song": "Scarified"
+      }
+    ]
+  },
+  "P30": {
+    "name": "OCTAFUZZ LEAD",
+    "tone": "Alt Rock",
+    "songs": [
+      {
+        "artist": "Jimi Hendrix",
+        "song": "Foxy Lady"
+      },
+      {
+        "artist": "The White Stripes",
+        "song": "Blue Orchid"
+      },
+      {
+        "artist": "Black Pumas",
+        "song": "Black Moon Rising"
+      }
+    ]
+  },
+  "P31": {
+    "name": "60s FUZZ LEGEND",
+    "tone": "Metal Rhythm",
+    "songs": [
+      {
+        "artist": "The Doors",
+        "song": "Five to One"
+      },
+      {
+        "artist": "Cream",
+        "song": "SWLABR"
+      },
+      {
+        "artist": "The Yardbirds",
+        "song": "Heart Full of Soul"
+      }
+    ]
+  },
+  "P32": {
+    "name": "5th PS & GATE",
+    "tone": "Ambient Delay",
+    "songs": [
+      {
+        "artist": "Def Leppard",
+        "song": "Pour Some Sugar on Me"
+      },
+      {
+        "artist": "Mötley Crüe",
+        "song": "Kickstart My Heart"
+      },
+      {
+        "artist": "Bon Jovi",
+        "song": "Livin' on a Prayer"
+      }
+    ]
+  },
+  "P33": {
+    "name": "ROADS",
+    "tone": "Clean",
+    "songs": [
+      {
+        "artist": "Boston",
+        "song": "More Than a Feeling"
+      },
+      {
+        "artist": "Journey",
+        "song": "Don't Stop Believin'"
+      },
+      {
+        "artist": "Thin Lizzy",
+        "song": "Jailbreak"
+      }
+    ]
+  },
+  "P34": {
+    "name": "SLOW GEAR LEAD",
+    "tone": "Metal",
+    "songs": [
+      {
+        "artist": "Pink Floyd",
+        "song": "Echoes"
+      },
+      {
+        "artist": "Steve Hackett",
+        "song": "Firth of Fifth"
+      },
+      {
+        "artist": "Jeff Beck",
+        "song": "Where Were You"
+      }
+    ]
+  },
+  "P35": {
+    "name": "POWER DRIVE",
+    "tone": "Harmony Lead",
+    "songs": [
+      {
+        "artist": "Foo Fighters",
+        "song": "Everlong"
+      },
+      {
+        "artist": "Pearl Jam",
+        "song": "Alive"
+      },
+      {
+        "artist": "The Smashing Pumpkins",
+        "song": "Cherub Rock"
+      }
+    ]
+  },
+  "P36": {
+    "name": "AMBIENT DIRTY OD",
+    "tone": "Rotary",
+    "songs": [
+      {
+        "artist": "U2",
+        "song": "With or Without You"
+      },
+      {
+        "artist": "The Edge",
+        "song": "Until the End of the World"
+      },
+      {
+        "artist": "The War on Drugs",
+        "song": "Red Eyes"
+      }
+    ]
+  },
+  "P37": {
+    "name": "MATCH CRUNCH",
+    "tone": "Blues",
+    "songs": [
+      {
+        "artist": "Oasis",
+        "song": "Wonderwall"
+      },
+      {
+        "artist": "The Kinks",
+        "song": "You Really Got Me"
+      },
+      {
+        "artist": "Arctic Monkeys",
+        "song": "R U Mine?"
+      }
+    ]
+  },
+  "P38": {
+    "name": "ORNG CRUNCH",
+    "tone": "Tremolo",
+    "songs": [
+      {
+        "artist": "Arctic Monkeys",
+        "song": "Do I Wanna Know?"
+      },
+      {
+        "artist": "The Black Crowes",
+        "song": "Hard to Handle"
+      },
+      {
+        "artist": "Kings of Leon",
+        "song": "Sex on Fire"
+      }
+    ]
+  },
+  "P39": {
+    "name": "STEREO STACK",
+    "tone": "Boosted Clean",
+    "songs": [
+      {
+        "artist": "Muse",
+        "song": "Plug In Baby"
+      },
+      {
+        "artist": "Def Leppard",
+        "song": "Hysteria"
+      },
+      {
+        "artist": "The Cure",
+        "song": "Just Like Heaven"
+      }
+    ]
+  },
+  "P40": {
+    "name": "LA TR RIFF",
+    "tone": "Alt Rock",
+    "songs": [
+      {
+        "artist": "Red Hot Chili Peppers",
+        "song": "Can't Stop"
+      },
+      {
+        "artist": "Incubus",
+        "song": "Are You In?"
+      },
+      {
+        "artist": "Jane's Addiction",
+        "song": "Been Caught Stealing"
+      }
+    ]
+  },
+  "P41": {
+    "name": "COMBO AC",
+    "tone": "Metal Rhythm",
+    "songs": [
+      {
+        "artist": "Tom Petty",
+        "song": "Free Fallin'"
+      },
+      {
+        "artist": "R.E.M.",
+        "song": "The One I Love"
+      },
+      {
+        "artist": "The Byrds",
+        "song": "Mr. Tambourine Man"
+      }
+    ]
+  },
+  "P42": {
+    "name": "TWIN CRUNCH",
+    "tone": "Ambient Delay",
+    "songs": [
+      {
+        "artist": "Stevie Ray Vaughan",
+        "song": "Texas Flood"
+      },
+      {
+        "artist": "John Mayer",
+        "song": "Who Did You Think I Was"
+      },
+      {
+        "artist": "Buddy Guy",
+        "song": "Damn Right, I've Got the Blues"
+      }
+    ]
+  },
+  "P43": {
+    "name": "SLIDE FOR LP",
+    "tone": "Clean",
+    "songs": [
+      {
+        "artist": "Duane Allman",
+        "song": "Statesboro Blues"
+      },
+      {
+        "artist": "Derek Trucks",
+        "song": "Midnight in Harlem"
+      },
+      {
+        "artist": "Joe Walsh",
+        "song": "Rocky Mountain Way"
+      }
+    ]
+  },
+  "P44": {
+    "name": "BASIC BLUES",
+    "tone": "Metal",
+    "songs": [
+      {
+        "artist": "B.B. King",
+        "song": "The Thrill Is Gone"
+      },
+      {
+        "artist": "Eric Clapton",
+        "song": "Before You Accuse Me"
+      },
+      {
+        "artist": "The Rolling Stones",
+        "song": "Brown Sugar"
+      }
+    ]
+  },
+  "P45": {
+    "name": "KING OF BLUES",
+    "tone": "Harmony Lead",
+    "songs": [
+      {
+        "artist": "B.B. King",
+        "song": "Sweet Little Angel"
+      },
+      {
+        "artist": "Albert King",
+        "song": "Born Under a Bad Sign"
+      },
+      {
+        "artist": "Freddie King",
+        "song": "Going Down"
+      }
+    ]
+  },
+  "P46": {
+    "name": "FINGER LEAD",
+    "tone": "Rotary",
+    "songs": [
+      {
+        "artist": "Larry Carlton",
+        "song": "Room 335"
+      },
+      {
+        "artist": "Robben Ford",
+        "song": "Indianola"
+      },
+      {
+        "artist": "Lee Ritenour",
+        "song": "Is It You?"
+      }
+    ]
+  },
+  "P47": {
+    "name": "BLUES BUDDY",
+    "tone": "Blues",
+    "songs": [
+      {
+        "artist": "Buddy Guy",
+        "song": "Damn Right, I've Got the Blues"
+      },
+      {
+        "artist": "Kenny Wayne Shepherd",
+        "song": "Blue on Black"
+      },
+      {
+        "artist": "Joe Bonamassa",
+        "song": "Driving Towards the Daylight"
+      }
+    ]
+  },
+  "P48": {
+    "name": "SQUEEZE BLUES GT",
+    "tone": "Tremolo",
+    "songs": [
+      {
+        "artist": "The Black Keys",
+        "song": "Little Black Submarines"
+      },
+      {
+        "artist": "Gary Clark Jr.",
+        "song": "When My Train Pulls In"
+      },
+      {
+        "artist": "John Mayer",
+        "song": "Gravity"
+      }
+    ]
+  },
+  "P49": {
+    "name": "BARK TONE",
+    "tone": "Boosted Clean",
+    "songs": [
+      {
+        "artist": "Van Halen",
+        "song": "Ain't Talkin' 'Bout Love"
+      },
+      {
+        "artist": "Robin Trower",
+        "song": "Too Rolling Stoned"
+      },
+      {
+        "artist": "Aerosmith",
+        "song": "Walk This Way"
+      }
+    ]
+  },
+  "P50": {
+    "name": "70s US HARD ROCK",
+    "tone": "Alt Rock",
+    "songs": [
+      {
+        "artist": "Aerosmith",
+        "song": "Sweet Emotion"
+      },
+      {
+        "artist": "Kiss",
+        "song": "Detroit Rock City"
+      },
+      {
+        "artist": "Ted Nugent",
+        "song": "Stranglehold"
+      }
+    ]
+  },
+  "P51": {
+    "name": "BROWN SND For ST",
+    "tone": "Metal Rhythm",
+    "songs": [
+      {
+        "artist": "Van Halen",
+        "song": "Panama"
+      },
+      {
+        "artist": "Mr. Big",
+        "song": "Daddy, Brother, Lover, Little Boy"
+      },
+      {
+        "artist": "Extreme",
+        "song": "Get the Funk Out"
+      }
+    ]
+  },
+  "P52": {
+    "name": "1984 DRIVEN’",
+    "tone": "Ambient Delay",
+    "songs": [
+      {
+        "artist": "Van Halen",
+        "song": "Hot for Teacher"
+      },
+      {
+        "artist": "Dokken",
+        "song": "Alone Again"
+      },
+      {
+        "artist": "Whitesnake",
+        "song": "Still of the Night"
+      }
+    ]
+  },
+  "P53": {
+    "name": "OD-1 + STACK",
+    "tone": "Clean",
+    "songs": [
+      {
+        "artist": "Ozzy Osbourne",
+        "song": "Mr. Crowley"
+      },
+      {
+        "artist": "Thin Lizzy",
+        "song": "Cold Sweat"
+      },
+      {
+        "artist": "Scorpions",
+        "song": "Rock You Like a Hurricane"
+      }
+    ]
+  },
+  "P54": {
+    "name": "GREAT ROCK",
+    "tone": "Metal",
+    "songs": [
+      {
+        "artist": "Guns N' Roses",
+        "song": "Sweet Child O' Mine"
+      },
+      {
+        "artist": "Def Leppard",
+        "song": "Photograph"
+      },
+      {
+        "artist": "Bon Jovi",
+        "song": "You Give Love a Bad Name"
+      }
+    ]
+  },
+  "P55": {
+    "name": "BGNR LEAD",
+    "tone": "Harmony Lead",
+    "songs": [
+      {
+        "artist": "Alice in Chains",
+        "song": "Man in the Box"
+      },
+      {
+        "artist": "Dream Theater",
+        "song": "Pull Me Under"
+      },
+      {
+        "artist": "Skid Row",
+        "song": "18 and Life"
+      }
+    ]
+  },
+  "P56": {
+    "name": "MODERN METAL",
+    "tone": "Rotary",
+    "songs": [
+      {
+        "artist": "Avenged Sevenfold",
+        "song": "Bat Country"
+      },
+      {
+        "artist": "Bullet for My Valentine",
+        "song": "Tears Don't Fall"
+      },
+      {
+        "artist": "Trivium",
+        "song": "In Waves"
+      }
+    ]
+  },
+  "P57": {
+    "name": "CHORUS LEAD",
+    "tone": "Blues",
+    "songs": [
+      {
+        "artist": "Zakk Wylde",
+        "song": "No More Tears"
+      },
+      {
+        "artist": "Def Leppard",
+        "song": "Hysteria"
+      },
+      {
+        "artist": "Dio",
+        "song": "Holy Diver"
+      }
+    ]
+  },
+  "P58": {
+    "name": "R-FIER LEAD",
+    "tone": "Tremolo",
+    "songs": [
+      {
+        "artist": "Metallica",
+        "song": "Master of Puppets"
+      },
+      {
+        "artist": "Lamb of God",
+        "song": "Laid to Rest"
+      },
+      {
+        "artist": "Machine Head",
+        "song": "Davidian"
+      }
+    ]
+  },
+  "P59": {
+    "name": "METAL MONEY",
+    "tone": "Boosted Clean",
+    "songs": [
+      {
+        "artist": "Pantera",
+        "song": "Cowboys from Hell"
+      },
+      {
+        "artist": "Sepultura",
+        "song": "Refuse/Resist"
+      },
+      {
+        "artist": "White Zombie",
+        "song": "Thunder Kiss '65"
+      }
+    ]
+  },
+  "P60": {
+    "name": "METAL CORN",
+    "tone": "Alt Rock",
+    "songs": [
+      {
+        "artist": "Korn",
+        "song": "Blind"
+      },
+      {
+        "artist": "Slipknot",
+        "song": "Duality"
+      },
+      {
+        "artist": "Mudvayne",
+        "song": "Dig"
+      }
+    ]
+  },
+  "P61": {
+    "name": "DRAGON METAL",
+    "tone": "Metal Rhythm",
+    "songs": [
+      {
+        "artist": "Killswitch Engage",
+        "song": "My Curse"
+      },
+      {
+        "artist": "As I Lay Dying",
+        "song": "Nothing Left"
+      },
+      {
+        "artist": "All That Remains",
+        "song": "This Calling"
+      }
+    ]
+  },
+  "P62": {
+    "name": "BLADE METAL",
+    "tone": "Ambient Delay",
+    "songs": [
+      {
+        "artist": "Judas Priest",
+        "song": "Painkiller"
+      },
+      {
+        "artist": "Children of Bodom",
+        "song": "Downfall"
+      },
+      {
+        "artist": "Arch Enemy",
+        "song": "Nemesis"
+      }
+    ]
+  },
+  "P63": {
+    "name": "TRIPLE DEEP DLY",
+    "tone": "Clean",
+    "songs": [
+      {
+        "artist": "The Edge",
+        "song": "Where the Streets Have No Name"
+      },
+      {
+        "artist": "Explosions in the Sky",
+        "song": "Your Hand in Mine"
+      },
+      {
+        "artist": "Coldplay",
+        "song": "Fix You"
+      }
+    ]
+  },
+  "P64": {
+    "name": "METAMORPHOSIS GT",
+    "tone": "Metal",
+    "songs": [
+      {
+        "artist": "Rush",
+        "song": "Subdivisions"
+      },
+      {
+        "artist": "Yes",
+        "song": "Owner of a Lonely Heart"
+      },
+      {
+        "artist": "Porcupine Tree",
+        "song": "Arriving Somewhere but Not Here"
+      }
+    ]
+  },
+  "P65": {
+    "name": "DIAMOND ECHO",
+    "tone": "Harmony Lead",
+    "songs": [
+      {
+        "artist": "Chris Isaak",
+        "song": "Wicked Game"
+      },
+      {
+        "artist": "Roy Orbison",
+        "song": "Oh, Pretty Woman"
+      },
+      {
+        "artist": "The Shadows",
+        "song": "Apache"
+      }
+    ]
+  },
+  "P66": {
+    "name": "TREMOLO MOD DELAY",
+    "tone": "Rotary",
+    "songs": [
+      {
+        "artist": "The Smiths",
+        "song": "How Soon Is Now?"
+      },
+      {
+        "artist": "Radiohead",
+        "song": "Street Spirit (Fade Out)"
+      },
+      {
+        "artist": "Mazzy Star",
+        "song": "Fade Into You"
+      }
+    ]
+  },
+  "P67": {
+    "name": "MULTI DIMENSION",
+    "tone": "Blues",
+    "songs": [
+      {
+        "artist": "The Police",
+        "song": "Walking on the Moon"
+      },
+      {
+        "artist": "Andy Summers",
+        "song": "Message in a Bottle"
+      },
+      {
+        "artist": "King Crimson",
+        "song": "Frame by Frame"
+      }
+    ]
+  },
+  "P68": {
+    "name": "YOU TWO",
+    "tone": "Tremolo",
+    "songs": [
+      {
+        "artist": "U2",
+        "song": "I Still Haven't Found What I'm Looking For"
+      },
+      {
+        "artist": "The Edge",
+        "song": "Pride (In the Name of Love)"
+      },
+      {
+        "artist": "Big Country",
+        "song": "In a Big Country"
+      }
+    ]
+  },
+  "P69": {
+    "name": "MELLOW FELLOW",
+    "tone": "Boosted Clean",
+    "songs": [
+      {
+        "artist": "Dire Straits",
+        "song": "Sultans of Swing"
+      },
+      {
+        "artist": "John Mayer",
+        "song": "Neon"
+      },
+      {
+        "artist": "George Benson",
+        "song": "Breezin'"
+      }
+    ]
+  },
+  "P70": {
+    "name": "80s STUDIO LEAD",
+    "tone": "Alt Rock",
+    "songs": [
+      {
+        "artist": "Journey",
+        "song": "Separate Ways"
+      },
+      {
+        "artist": "Steve Lukather",
+        "song": "Rosanna"
+      },
+      {
+        "artist": "Night Ranger",
+        "song": "Don't Tell Me You Love Me"
+      }
+    ]
+  },
+  "P71": {
+    "name": "SUPER CLEAN",
+    "tone": "Metal Rhythm",
+    "songs": [
+      {
+        "artist": "The Police",
+        "song": "Every Breath You Take"
+      },
+      {
+        "artist": "Dire Straits",
+        "song": "Sultans of Swing"
+      },
+      {
+        "artist": "The 1975",
+        "song": "Somebody Else"
+      }
+    ]
+  },
+  "P72": {
+    "name": "SUPER MODULATE",
+    "tone": "Ambient Delay",
+    "songs": [
+      {
+        "artist": "The Cure",
+        "song": "Just Like Heaven"
+      },
+      {
+        "artist": "Johnny Marr",
+        "song": "This Charming Man"
+      },
+      {
+        "artist": "Cocteau Twins",
+        "song": "Heaven or Las Vegas"
+      }
+    ]
+  },
+  "P73": {
+    "name": "SLICED UP",
+    "tone": "Clean",
+    "songs": [
+      {
+        "artist": "Radiohead",
+        "song": "2 + 2 = 5"
+      },
+      {
+        "artist": "Muse",
+        "song": "Map of the Problematique"
+      },
+      {
+        "artist": "Incubus",
+        "song": "A Crow Left of the Murder"
+      }
+    ]
+  },
+  "P74": {
+    "name": "DEEP CS StCHORUS",
+    "tone": "Metal",
+    "songs": [
+      {
+        "artist": "The Cure",
+        "song": "Pictures of You"
+      },
+      {
+        "artist": "The Police",
+        "song": "Walking on the Moon"
+      },
+      {
+        "artist": "Rush",
+        "song": "Limelight"
+      }
+    ]
+  },
+  "P75": {
+    "name": "WALL OF FUZZTONE",
+    "tone": "Harmony Lead",
+    "songs": [
+      {
+        "artist": "Smashing Pumpkins",
+        "song": "Cherub Rock"
+      },
+      {
+        "artist": "My Bloody Valentine",
+        "song": "Only Shallow"
+      },
+      {
+        "artist": "Dinosaur Jr.",
+        "song": "Feel the Pain"
+      }
+    ]
+  },
+  "P76": {
+    "name": "NY LEAD MODULATE",
+    "tone": "Rotary",
+    "songs": [
+      {
+        "artist": "Pat Metheny",
+        "song": "Bright Size Life"
+      },
+      {
+        "artist": "Allan Holdsworth",
+        "song": "Metal Fatigue"
+      },
+      {
+        "artist": "Steve Lukather",
+        "song": "Home"
+      }
+    ]
+  },
+  "P77": {
+    "name": "LEZLY HEAVEN",
+    "tone": "Blues",
+    "songs": [
+      {
+        "artist": "The Beatles",
+        "song": "Let It Be"
+      },
+      {
+        "artist": "Pink Floyd",
+        "song": "Breathe (In the Air)"
+      },
+      {
+        "artist": "Santana",
+        "song": "Black Magic Woman"
+      }
+    ]
+  },
+  "P78": {
+    "name": "NOISY DUB",
+    "tone": "Tremolo",
+    "songs": [
+      {
+        "artist": "Massive Attack",
+        "song": "Angel"
+      },
+      {
+        "artist": "Dub Trio",
+        "song": "Not for Nothing"
+      },
+      {
+        "artist": "Radiohead",
+        "song": "The National Anthem"
+      }
+    ]
+  },
+  "P79": {
+    "name": "TIGHT CRUNCH",
+    "tone": "Boosted Clean",
+    "songs": [
+      {
+        "artist": "Nile Rodgers",
+        "song": "Le Freak"
+      },
+      {
+        "artist": "Prince",
+        "song": "Kiss"
+      },
+      {
+        "artist": "Chic",
+        "song": "Good Times"
+      }
+    ]
+  },
+  "P80": {
+    "name": "70s FUNKY CLEAN",
+    "tone": "Alt Rock",
+    "songs": [
+      {
+        "artist": "Kool & the Gang",
+        "song": "Jungle Boogie"
+      },
+      {
+        "artist": "Earth, Wind & Fire",
+        "song": "Shining Star"
+      },
+      {
+        "artist": "Steely Dan",
+        "song": "Peg"
+      }
+    ]
+  },
+  "P81": {
+    "name": "FLAGEOLETTO",
+    "tone": "Metal Rhythm",
+    "songs": [
+      {
+        "artist": "The Police",
+        "song": "Walking on the Moon"
+      },
+      {
+        "artist": "David Gilmour",
+        "song": "Run Like Hell"
+      },
+      {
+        "artist": "Cocteau Twins",
+        "song": "Heaven or Las Vegas"
+      }
+    ]
+  },
+  "P82": {
+    "name": "TERA FUNK",
+    "tone": "Ambient Delay",
+    "songs": [
+      {
+        "artist": "Prince",
+        "song": "Kiss"
+      },
+      {
+        "artist": "Jamiroquai",
+        "song": "Little L"
+      },
+      {
+        "artist": "Cory Wong",
+        "song": "Cosmic Sans"
+      }
+    ]
+  },
+  "P83": {
+    "name": "FUNKY GROOVE",
+    "tone": "Clean",
+    "songs": [
+      {
+        "artist": "James Brown",
+        "song": "Sex Machine"
+      },
+      {
+        "artist": "Tower of Power",
+        "song": "What Is Hip?"
+      },
+      {
+        "artist": "Red Hot Chili Peppers",
+        "song": "Tell Me Baby"
+      }
+    ]
+  },
+  "P84": {
+    "name": "TERA REV & COMP",
+    "tone": "Metal",
+    "songs": [
+      {
+        "artist": "Pat Metheny",
+        "song": "Last Train Home"
+      },
+      {
+        "artist": "Larry Carlton",
+        "song": "Room 335"
+      },
+      {
+        "artist": "George Benson",
+        "song": "Breezin'"
+      }
+    ]
+  },
+  "P85": {
+    "name": "FUSION 335",
+    "tone": "Harmony Lead",
+    "songs": [
+      {
+        "artist": "Larry Carlton",
+        "song": "Room 335"
+      },
+      {
+        "artist": "Lee Ritenour",
+        "song": "Captain Fingers"
+      },
+      {
+        "artist": "Robben Ford",
+        "song": "Talk to Your Daughter"
+      }
+    ]
+  },
+  "P86": {
+    "name": "80s JAZZ FUSION",
+    "tone": "Rotary",
+    "songs": [
+      {
+        "artist": "Chick Corea Elektric Band",
+        "song": "Got a Match?"
+      },
+      {
+        "artist": "Pat Metheny Group",
+        "song": "First Circle"
+      },
+      {
+        "artist": "The Yellowjackets",
+        "song": "Imperial Strut"
+      }
+    ]
+  },
+  "P87": {
+    "name": "MILD JAZZ",
+    "tone": "Blues",
+    "songs": [
+      {
+        "artist": "Wes Montgomery",
+        "song": "Four on Six"
+      },
+      {
+        "artist": "Joe Pass",
+        "song": "Night and Day"
+      },
+      {
+        "artist": "George Benson",
+        "song": "Affirmation"
+      }
+    ]
+  },
+  "P88": {
+    "name": "JAZZ FIELD",
+    "tone": "Tremolo",
+    "songs": [
+      {
+        "artist": "John Scofield",
+        "song": "A Go Go"
+      },
+      {
+        "artist": "Mike Stern",
+        "song": "Chromazone"
+      },
+      {
+        "artist": "Al Di Meola",
+        "song": "Race with Devil on Spanish Highway"
+      }
+    ]
+  },
+  "P89": {
+    "name": "JAZZ SIMULATOR",
+    "tone": "Boosted Clean",
+    "songs": [
+      {
+        "artist": "Wes Montgomery",
+        "song": "West Coast Blues"
+      },
+      {
+        "artist": "Pat Martino",
+        "song": "Impressions"
+      },
+      {
+        "artist": "Grant Green",
+        "song": "Idle Moments"
+      }
+    ]
+  },
+  "P90": {
+    "name": "CLEAN SUSTAIN",
+    "tone": "Alt Rock",
+    "songs": [
+      {
+        "artist": "Larry Carlton",
+        "song": "Kid Charlemagne"
+      },
+      {
+        "artist": "Santana",
+        "song": "Europa"
+      },
+      {
+        "artist": "George Benson",
+        "song": "This Masquerade"
+      }
+    ]
+  },
+  "P91": {
+    "name": "COMP CRUNCH LEAD",
+    "tone": "Metal Rhythm",
+    "songs": [
+      {
+        "artist": "Pat Metheny",
+        "song": "Third Wind"
+      },
+      {
+        "artist": "Mike Stern",
+        "song": "Jean Pierre"
+      },
+      {
+        "artist": "Robben Ford",
+        "song": "Freedom"
+      }
+    ]
+  },
+  "P92": {
+    "name": "FULLRTN DRIVE",
+    "tone": "Ambient Delay",
+    "songs": [
+      {
+        "artist": "Chuck Berry",
+        "song": "Johnny B. Goode"
+      },
+      {
+        "artist": "Buddy Holly",
+        "song": "Peggy Sue"
+      },
+      {
+        "artist": "Carl Perkins",
+        "song": "Matchbox"
+      }
+    ]
+  },
+  "P93": {
+    "name": "UNMATCHED COMBO",
+    "tone": "Clean",
+    "songs": [
+      {
+        "artist": "The Beatles",
+        "song": "Day Tripper"
+      },
+      {
+        "artist": "The Byrds",
+        "song": "Mr. Tambourine Man"
+      },
+      {
+        "artist": "Buck Owens",
+        "song": "Act Naturally"
+      }
+    ]
+  },
+  "P94": {
+    "name": "COUNTRY PICKIN’",
+    "tone": "Metal",
+    "songs": [
+      {
+        "artist": "Brad Paisley",
+        "song": "Ticks"
+      },
+      {
+        "artist": "Albert Lee",
+        "song": "Country Boy"
+      },
+      {
+        "artist": "Brent Mason",
+        "song": "Hot Wired"
+      }
+    ]
+  },
+  "P95": {
+    "name": "TWEED CLEAN",
+    "tone": "Harmony Lead",
+    "songs": [
+      {
+        "artist": "Keith Richards",
+        "song": "Brown Sugar"
+      },
+      {
+        "artist": "Neil Young",
+        "song": "Heart of Gold"
+      },
+      {
+        "artist": "John Fogerty",
+        "song": "Green River"
+      }
+    ]
+  },
+  "P96": {
+    "name": "ClnTWIN SOUTHERN",
+    "tone": "Rotary",
+    "songs": [
+      {
+        "artist": "Lynyrd Skynyrd",
+        "song": "Sweet Home Alabama"
+      },
+      {
+        "artist": "The Allman Brothers Band",
+        "song": "Ramblin' Man"
+      },
+      {
+        "artist": "Marshall Tucker Band",
+        "song": "Can't You See"
+      }
+    ]
+  },
+  "P97": {
+    "name": "SAFARI USA",
+    "tone": "Blues",
+    "songs": [
+      {
+        "artist": "Dick Dale",
+        "song": "Misirlou"
+      },
+      {
+        "artist": "The Ventures",
+        "song": "Walk, Don't Run"
+      },
+      {
+        "artist": "The Surfaris",
+        "song": "Wipe Out"
+      }
+    ]
+  },
+  "P98": {
+    "name": "MELLOW LEAD",
+    "tone": "Tremolo",
+    "songs": [
+      {
+        "artist": "Santana",
+        "song": "Europa"
+      },
+      {
+        "artist": "Gary Moore",
+        "song": "Parisienne Walkways"
+      },
+      {
+        "artist": "Peter Green",
+        "song": "Need Your Love So Bad"
+      }
+    ]
+  },
+  "P99": {
+    "name": "RETRO TREMOLO",
+    "tone": "Boosted Clean",
+    "songs": [
+      {
+        "artist": "Creedence Clearwater Revival",
+        "song": "Born on the Bayou"
+      },
+      {
+        "artist": "The Ventures",
+        "song": "Pipeline"
+      },
+      {
+        "artist": "Chris Isaak",
+        "song": "Wicked Game"
+      }
+    ]
+  }
+}
