@@ -1,0 +1,133 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+table {
+    width: 100%;
+    height: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+td {
+    text-align: left;
+    vertical-align: top;
+}
+
+.top {
+    background: #1f2937;
+    color: #e5e7eb;
+    /* dark blue/gray */
+}
+
+.mid {
+    background: #111827;
+    color: #e5e7eb;
+}
+
+.bottom {
+    background: #1a1a1a;
+    /* neutral dark */
+}
+
+#leftPanel {
+    height: 300px;
+    overflow-y: auto;
+    background: #1a1f26;
+    border-right: 1px solid #343a40;
+    padding: 16px;
+    vertical-align: top;
+}
+.preset-item {
+    cursor: pointer;
+    border: 1px solid #3a434d;
+    background: #232a33;
+    color: #f8f9fa;
+    border-radius: 10px;
+    padding: 10px 12px;
+    margin-bottom: 10px;
+    transition: 0.15s ease;
+}
+
+.preset-item:hover {
+    background: #2d3641;
+    transform: translateY(-1px);
+}
+
+.preset-item.active {
+    background: #0d6efd;
+    border-color: #5aa2ff;
+    color: white;
+}
+
+.preset-code {
+    font-weight: bold;
+    font-size: 0.95rem;
+}
+
+.preset-name {
+    font-size: 1rem;
+    margin-top: 2px;
+}
+
+.preset-tone {
+    font-size: 0.85rem;
+    opacity: 0.8;
+    margin-top: 3px;
+}
+
+.filter-label {
+    font-size: 0.85rem;
+    color: #adb5bd;
+    margin-bottom: 4px;
+}
+
+.results-count {
+    font-size: 0.9rem;
+    color: #adb5bd;
+    margin: 10px 0 12px 0;
+}
+
+.small-note {
+    color: #98a3ad;
+    font-size: 0.8rem;
+}
+
+#gameWrap {
+    flex: 1;
+    min-width: 0;
+    background: #1a1a1a;
+}
+
+.selected-preset-key {
+    font-family: "Arial";
+    font-size: 18px;
+    color: #7fb3ff;
+    font-style: bold;
+}
+
+.selected-preset-name{
+    font-family: "Arial";
+    font-size: 26px;
+    color: #ffffff;
+    font-style: bold;
+    word-wrap: true;
+}
+
+.selected-preset-tone {
+    font-family: "Arial";
+    font-size: 18px;
+    color: #d0d7de
+}
+.selected-preset-songsTitle {
+    font-family: "Arial";
+    font-size: 18px;
+    color: #d0d7de
+}
+.selected-preset-song {
+    font-family: "Arial";
+    font-size: 16px;
+    color: #9dc1ff;
+    font-style: bold
+}

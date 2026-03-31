@@ -8,187 +8,194 @@ export class PresetBrowserScene extends Phaser.Scene {
     }
 
     create() {
-        this.currentPresetKey = null;
-        this.currentPreset = null;
+        this.data = this.cache.json.get("presets");
+
+        this.presetsArray = Object.keys(this.data).map((key) => ({
+            key,
+            name: this.data[key].name,
+            tone: this.data[key].tone,
+            songs: this.data[key].songs || []
+        }));
+
+        this.toneFilter = document.getElementById("toneFilter");
+        this.presetFilter = document.getElementById("presetFilter");
+        this.searchInput = document.getElementById("searchInput");
+        this.presetList = document.getElementById("presetList");
+        this.resultsCount = document.getElementById("resultsCount");
+        this.clearBtn = document.getElementById("clearBtn");
+        this.sortBtn = document.getElementById("sortBtn");
+        this.results = document.getElementById("results");
+        this.searchInput.addEventListener("input", this.renderPresetList);
+        this.toneFilter.addEventListener("change", this.renderPresetList);
+        this.presetFilter.addEventListener("change", this.renderPresetList);
+        this.clearBtn.addEventListener("click", () => {
+            this.searchInput.value = "";
+            this.toneFilter.value = "";
+            this.presetFilter.value = "";
+            this.selectedPresetKey = null;
+            this.renderPresetList();
+        });
+        this.selectedPreset = document.getElementById("selectedPreset");
+
+        this.selectedPresetKey = null;
+        this.sortMode = "preset";
+
+        this.toneFilter.innerHTML = `<option value="">All tones</option>`;
+        this.presetFilter.innerHTML = `<option value="">All presets</option>`;
+
+        const toneSet = [...new Set(this.presetsArray.map((p) => p.tone))].sort();
+
+        toneSet.forEach((tone) => {
+            const opt = document.createElement("option");
+            opt.value = tone;
+            opt.textContent = tone;
+            this.toneFilter.appendChild(opt);
+        });
+
+        this.presetsArray
+            .slice()
+            .sort((a, b) => a.key.localeCompare(b.key))
+            .forEach((preset) => {
+                const opt = document.createElement("option");
+                opt.value = preset.key;
+                opt.textContent = `${preset.key} - ${preset.name}`;
+                presetFilter.appendChild(opt);
+            });
+
+        this.currentPresetKey = this.presetsArray[0].key;
+        this.currentPreset = this.presetsArray[0].name;
         this.songRows = [];
         this.headerObjects = [];
         this.footerObjects = [];
+        this.renderPresetList();
+    }
 
-        this.bg = this.add.graphics();
-        this.uiLayer = this.add.container(0, 0);
+    getFilteredPresets() {
+        const search = searchInput.value.trim().toLowerCase();
+        const tone = toneFilter.value;
+        const presetKey = presetFilter.value;
 
-        this.drawBackground();
-        this.scale.on("resize", this.handleResize, this);
+        let list = this.presetsArray.filter((p) => {
+            if (tone && p.tone !== tone) return false;
+            if (presetKey && p.key !== presetKey) return false;
 
-        this.showWelcome();
+            if (!search) return true;
 
-        const data = this.cache.json.get("presets");
-        if (window.initPresetBrowserUI) {
-            window.initPresetBrowserUI(data, this);
+            const presetMatch =
+                p.key.toLowerCase().includes(search) ||
+                p.name.toLowerCase().includes(search) ||
+                p.tone.toLowerCase().includes(search);
+
+            const songMatch = p.songs.some((s) =>
+                s.artist.toLowerCase().includes(search) ||
+                s.song.toLowerCase().includes(search)
+            );
+
+            return presetMatch || songMatch;
+        });
+
+        if (this.sortMode === "preset") {
+            list.sort((a, b) => a.key.localeCompare(b.key));
+        } else if (sortMode === "name") {
+            list.sort((a, b) => a.name.localeCompare(b.name));
+        } else if (sortMode === "tone") {
+            list.sort((a, b) => {
+                const toneCmp = a.tone.localeCompare(b.tone);
+                return toneCmp !== 0 ? toneCmp : a.key.localeCompare(b.key);
+            });
+        } else if (sortMode === "songs") {
+            list.sort((a, b) => b.songs.length - a.songs.length || a.key.localeCompare(b.key));
         }
+
+        return list;
+    }
+
+    getVisibleSongsForPreset(preset) {
+        const search = searchInput.value.trim().toLowerCase();
+        if (!search) return preset.songs;
+
+        return preset.songs.filter((song) => {
+            return (
+                preset.key.toLowerCase().includes(search) ||
+                preset.name.toLowerCase().includes(search) ||
+                preset.tone.toLowerCase().includes(search) ||
+                song.artist.toLowerCase().includes(search) ||
+                song.song.toLowerCase().includes(search)
+            );
+        });
+    }
+
+    showPresetInScene(preset) {
+        this.selectPreset(preset.key, {
+            name: preset.name,
+            tone: preset.tone,
+            songs: this.getVisibleSongsForPreset(preset)
+        });
     }
 
     selectPreset(key, preset) {
         this.showPreset({ key, preset });
     }
 
-    drawBackground() {
-        const w = this.scale.width;
-        const h = this.scale.height;
+    renderPresetList() {
+        const filtered = this.getFilteredPresets();
+        this.presetList.innerHTML = "";
 
-        this.bg.clear();
-        this.bg.fillGradientStyle(0x10161d, 0x10161d, 0x19212a, 0x19212a, 1);
-        this.bg.fillRect(0, 0, w, h);
+        this.resultsCount.textContent = `${filtered.length} preset${filtered.length === 1 ? "" : "s"} found`;
 
-        this.bg.fillStyle(0x0d6efd, 0.12);
-        this.bg.fillRoundedRect(24, 24, w - 48, h - 48, 20);
+        if (!filtered.length) {
+            this.presetList.innerHTML = `
+        <div class="alert alert-secondary py-2 px-3">
+          No matching presets found.
+        </div>
+      `;
+            this.selectedPresetKey = null;
+            return;
+        }
 
-        this.bg.lineStyle(2, 0x4c84ff, 0.3);
-        this.bg.strokeRoundedRect(24, 24, w - 48, h - 48, 20);
-    }
+        filtered.forEach((preset) => {
+            const div = document.createElement("div");
+            div.className = "preset-item" + (preset.key === this.selectedPresetKey ? " active" : "");
+            div.innerHTML = `
+        <div class="preset-code">${preset.key}</div>
+        <div class="preset-name">${preset.name}</div>
+        <div class="preset-tone">${preset.tone} • ${preset.songs.length} songs</div>
+      `;
 
-    clearUI() {
-        this.uiLayer.removeAll(true);
-        this.songRows = [];
-        this.headerObjects = [];
-        this.footerObjects = [];
-    }
+            div.addEventListener("click", () => {
+                this.selectedPresetKey = preset.key;
+                this.renderPresetList();
+                this.showPresetInScene(preset);
+            });
 
-    showWelcome() {
-        this.clearUI();
+            this.presetList.appendChild(div);
+        });
 
-        const w = this.scale.width;
-        const h = this.scale.height;
+        if (!this.selectedPresetKey || !filtered.some((p) => p.key === this.selectedPresetKey)) {
+            this.selectedPresetKey = filtered[0].key;
+        }
 
-        const title = this.add.text(w / 2, h / 2 - 40, "GT-1 Preset Browser", {
-            fontFamily: "Arial",
-            fontSize: "30px",
-            color: "#ffffff",
-            fontStyle: "bold"
-        }).setOrigin(0.5);
-
-        const sub = this.add.text(w / 2, h / 2 + 10, "Choose a preset from the list on the left", {
-            fontFamily: "Arial",
-            fontSize: "18px",
-            color: "#b9c2cc"
-        }).setOrigin(0.5);
-
-        const note = this.add.text(w / 2, h / 2 + 46, "Use the filters to narrow by tone, preset, artist, or song", {
-            fontFamily: "Arial",
-            fontSize: "15px",
-            color: "#94a3b8"
-        }).setOrigin(0.5);
-
-        this.uiLayer.add([title, sub, note]);
+        const selected = filtered.find((p) => p.key === this.selectedPresetKey);
+        if (selected) {
+            this.showPresetInScene(selected);
+        }
     }
 
     showPreset(payload) {
         if (!payload) return;
-
         this.currentPresetKey = payload.key;
         this.currentPreset = payload.preset;
 
-        this.clearUI();
-        this.drawBackground();
-
-        const w = this.scale.width;
-        const h = this.scale.height;
-        const left = 52;
-        let y = 52;
-
-        const code = this.add.text(left, y, payload.key, {
-            fontFamily: "Arial",
-            fontSize: "18px",
-            color: "#7fb3ff",
-            fontStyle: "bold"
-        });
-        y += 28;
-
-        const name = this.add.text(left, y, payload.preset.name, {
-            fontFamily: "Arial",
-            fontSize: "30px",
-            color: "#ffffff",
-            fontStyle: "bold",
-            wordWrap: { width: w - 120 }
-        });
-        y += name.height + 10;
-
-        const tone = this.add.text(left, y, "Tone: " + payload.preset.tone, {
-            fontFamily: "Arial",
-            fontSize: "18px",
-            color: "#d0d7de"
-        });
-        y += 42;
-
-        const divider = this.add.graphics();
-        divider.lineStyle(2, 0xffffff, 0.15);
-        divider.lineBetween(left, y, w - 52, y);
-        y += 18;
-
-        const songsTitle = this.add.text(left, y, "Songs", {
-            fontFamily: "Arial",
-            fontSize: "22px",
-            color: "#ffffff",
-            fontStyle: "bold"
-        });
-        y += 38;
-
-        this.uiLayer.add([code, name, tone, divider, songsTitle]);
-
-        const rowHeight = 42;
+        let html = `
+        <div class="selected-preset-key">${payload.key}</div>
+        <div class="selected-preset-name">${payload.preset.name}</div>
+        <div class="selected-preset-tone">${payload.preset.tone}</div><p>
+        <div class="selected-preset-songsTitle">Songs</div> `;
         const songs = payload.preset.songs || [];
 
         for (let i = 0; i < songs.length; i++) {
-            const rowY = y + i * rowHeight;
-
-            const bg = this.add.graphics();
-            bg.fillStyle(i % 2 === 0 ? 0xffffff : 0x6ea8fe, i % 2 === 0 ? 0.04 : 0.03);
-            bg.fillRoundedRect(left, rowY, w - 104, 34, 10);
-
-            const artist = this.add.text(left + 14, rowY + 8, songs[i].artist, {
-                fontFamily: "Arial",
-                fontSize: "16px",
-                color: "#9dc1ff",
-                fontStyle: "bold"
-            });
-
-            const song = this.add.text(left + 250, rowY + 8, songs[i].song, {
-                fontFamily: "Arial",
-                fontSize: "16px",
-                color: "#ffffff",
-                wordWrap: { width: w - 340 }
-            });
-
-            this.uiLayer.add([bg, artist, song]);
+            html += `<div class="selected-preset-song">${songs[i].artist} - ${songs[i].song}</div>`
         }
-
-        const foot = this.add.text(
-            left,
-            h - 38,
-            `${songs.length} song${songs.length === 1 ? "" : "s"} shown`,
-            {
-                fontFamily: "Arial",
-                fontSize: "14px",
-                color: "#9aa7b4"
-            }
-        );
-        this.uiLayer.add(foot);
-    }
-
-    handleResize(gameSize) {
-        const width = gameSize.width;
-        const height = gameSize.height;
-
-        this.cameras.resize(width, height);
-        this.drawBackground();
-
-        if (this.currentPresetKey && this.currentPreset) {
-            this.showPreset({
-                key: this.currentPresetKey,
-                preset: this.currentPreset
-            });
-        } else {
-            this.showWelcome();
-        }
+        this.selectedPreset.innerHTML = html;
     }
 }
