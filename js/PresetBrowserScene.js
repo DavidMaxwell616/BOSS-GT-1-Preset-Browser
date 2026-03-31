@@ -25,9 +25,15 @@ export class PresetBrowserScene extends Phaser.Scene {
         this.clearBtn = document.getElementById("clearBtn");
         this.sortBtn = document.getElementById("sortBtn");
         this.results = document.getElementById("results");
-        this.searchInput.addEventListener("input", this.renderPresetList);
-        this.toneFilter.addEventListener("change", this.renderPresetList);
-        this.presetFilter.addEventListener("change", this.renderPresetList);
+        this.selectedPreset = document.getElementById("selectedPreset");
+
+        this.selectedPresetKey = null;
+        this.sortMode = "preset";
+
+        this.searchInput.addEventListener("input", () => this.renderPresetList());
+        this.toneFilter.addEventListener("change", () => this.renderPresetList());
+        this.presetFilter.addEventListener("change", () => this.renderPresetList());
+
         this.clearBtn.addEventListener("click", () => {
             this.searchInput.value = "";
             this.toneFilter.value = "";
@@ -35,10 +41,6 @@ export class PresetBrowserScene extends Phaser.Scene {
             this.selectedPresetKey = null;
             this.renderPresetList();
         });
-        this.selectedPreset = document.getElementById("selectedPreset");
-
-        this.selectedPresetKey = null;
-        this.sortMode = "preset";
 
         this.toneFilter.innerHTML = `<option value="">All tones</option>`;
         this.presetFilter.innerHTML = `<option value="">All presets</option>`;
@@ -59,11 +61,11 @@ export class PresetBrowserScene extends Phaser.Scene {
                 const opt = document.createElement("option");
                 opt.value = preset.key;
                 opt.textContent = `${preset.key} - ${preset.name}`;
-                presetFilter.appendChild(opt);
+                this.presetFilter.appendChild(opt);
             });
 
-        this.currentPresetKey = this.presetsArray[0].key;
-        this.currentPreset = this.presetsArray[0].name;
+        this.currentPresetKey = this.presetsArray[0]?.key || null;
+        this.currentPreset = this.presetsArray[0]?.name || null;
         this.songRows = [];
         this.headerObjects = [];
         this.footerObjects = [];
@@ -71,9 +73,9 @@ export class PresetBrowserScene extends Phaser.Scene {
     }
 
     getFilteredPresets() {
-        const search = searchInput.value.trim().toLowerCase();
-        const tone = toneFilter.value;
-        const presetKey = presetFilter.value;
+        const search = this.searchInput.value.trim().toLowerCase();
+        const tone = this.toneFilter.value;
+        const presetKey = this.presetFilter.value;
 
         let list = this.presetsArray.filter((p) => {
             if (tone && p.tone !== tone) return false;
@@ -96,18 +98,33 @@ export class PresetBrowserScene extends Phaser.Scene {
 
         if (this.sortMode === "preset") {
             list.sort((a, b) => a.key.localeCompare(b.key));
-        } else if (sortMode === "name") {
+        } else if (this.sortMode === "name") {
             list.sort((a, b) => a.name.localeCompare(b.name));
-        } else if (sortMode === "tone") {
+        } else if (this.sortMode === "tone") {
             list.sort((a, b) => {
                 const toneCmp = a.tone.localeCompare(b.tone);
                 return toneCmp !== 0 ? toneCmp : a.key.localeCompare(b.key);
             });
-        } else if (sortMode === "songs") {
+        } else if (this.sortMode === "songs") {
             list.sort((a, b) => b.songs.length - a.songs.length || a.key.localeCompare(b.key));
         }
 
         return list;
+    }
+
+    getVisibleSongsForPreset(preset) {
+        const search = this.searchInput.value.trim().toLowerCase();
+        if (!search) return preset.songs;
+
+        return preset.songs.filter((song) => {
+            return (
+                preset.key.toLowerCase().includes(search) ||
+                preset.name.toLowerCase().includes(search) ||
+                preset.tone.toLowerCase().includes(search) ||
+                song.artist.toLowerCase().includes(search) ||
+                song.song.toLowerCase().includes(search)
+            );
+        });
     }
 
     getVisibleSongsForPreset(preset) {
@@ -157,10 +174,10 @@ export class PresetBrowserScene extends Phaser.Scene {
             const div = document.createElement("div");
             div.className = "preset-item" + (preset.key === this.selectedPresetKey ? " active" : "");
             div.innerHTML = `
-        <div class="preset-code">${preset.key}</div>
-        <div class="preset-name">${preset.name}</div>
-        <div class="preset-tone">${preset.tone} • ${preset.songs.length} songs</div>
-      `;
+            <div class="preset-code">${preset.key}</div>
+            <div class="preset-name">${preset.name}</div>
+            <div class="preset-tone">${preset.tone} • ${preset.songs.length} songs</div>
+        `;
 
             div.addEventListener("click", () => {
                 this.selectedPresetKey = preset.key;
