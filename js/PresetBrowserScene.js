@@ -4,7 +4,7 @@ export class PresetBrowserScene extends Phaser.Scene {
     }
 
     preload() {
-        this.load.json("presets", "../assets/json/boss_gt1_presets.json");
+        this.load.json("presets", "./assets/json/boss_gt1_presets.json");
     }
 
     create() {
